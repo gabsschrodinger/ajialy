@@ -1,7 +1,7 @@
 {
   "name": "ajialy",
   "version": "0.0.0",
-  "scripts": {
+    "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,8 +11,7 @@
     "lint:fix": "eslint --fix .",
     "postinstall": "husky install"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Gabriel Fernandes",
   "devDependencies": {
     "@faker-js/faker": "^8.3.1",
     "@tailwindcss/typography": "^0.5.10",
