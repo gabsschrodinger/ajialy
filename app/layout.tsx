@@ -3,9 +3,10 @@ import "./globals.css";
 import React from "react";
 
 import type { Metadata } from "next";
+import { Navbar } from "@/components/navbar/navbar";
 
 export const metadata: Metadata = {
-  title: "Ajialy",
+  title: "ajialy",
   description: "Songs in Japanese, English, and Portuguese",
 };
 
@@ -16,7 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning={true}>{children}</body>
+      <body suppressHydrationWarning={true}>
+        <Navbar />
+
+        {children}
+      </body>
     </html>
   );
 }
