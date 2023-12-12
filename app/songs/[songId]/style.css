@@ -5,6 +5,7 @@
   line-height: 2.5rem;
   font-weight: 700;
   text-align: center;
+  margin: 5px;
 }
 
 .song-page-main-wrapper {
@@ -16,12 +17,24 @@
 }
 
 .song-page-artist-name {
-  font-size: 1.125rem;
+  font-size: 1.75rem;
   line-height: 1.75rem;
   color: #e4000f;
+  margin-top: 0;
 }
 
 .song-page-artist-name:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.song-page-lyrics-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.song-page-lyrics-line {
+  margin: 5px;
 }

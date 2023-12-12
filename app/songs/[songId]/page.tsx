@@ -37,16 +37,18 @@ export default async function Page({ params }: { params: { songId: number } }) {
     <>
       <main className="song-page-main-wrapper">
         <h2 className="song-page-title text-center">
-          {songWithArtist.name_japanese}
+          {songWithArtist.name_japanese + (songWithArtist.name_romaji
+            ? ` (${songWithArtist.name_romaji})`
+            : "")}
         </h2>
 
         <h2 className="song-page-artist-name">
           {songWithArtist.artist.name_original}
         </h2>
 
-        <div>
+        <div className="song-page-lyrics-wrapper">
           {lyrics.map((line) => (
-            <p>{line}</p>
+            <p className="song-page-lyrics-line">{line}</p>
           ))}
         </div>
       </main>

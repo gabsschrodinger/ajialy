@@ -9,5 +9,7 @@
   "spotify": "https://open.spotify.com/intl-pt/track/4CvtL7X8LUYF0goP932pfj?si=74c93c67349a4298",
   "has_japanese": true,
   "has_portuguese": true,
-  "has_english": false
+  "has_english": false,
+  "key": "A",
+  "bpm": 120
 }
